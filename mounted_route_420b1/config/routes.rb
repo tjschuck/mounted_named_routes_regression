@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+
+  require '../mountable/web'
+  mount Mountable::Web, at: 'some_route'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
